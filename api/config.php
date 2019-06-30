@@ -31,17 +31,17 @@
  */
 
 define('DISQUS_PUBKEY', 'E8Uh5l5fHZ6gD8U3KycjAIAk46f68Zw7C6eW8WSjZvCLXebZ7p0r1yrYDrLilk2F');
-define('PUBLIC_KEY', '');
-define('SECRET_KEY', '');
-define('DISQUS_USERNAME', '');
-define('DISQUS_EMAIL', '');
-define('DISQUS_PASSWORD', '');
-define('DISQUS_WEBSITE', '');
-define('DISQUS_SHORTNAME', '');
+define('PUBLIC_KEY', '13703IoHSQlda5rrhgz2QBbz2IL0e9YLAYdBIeIbyrAKGBriU3dEyoF3VhrXWnI7');
+define('SECRET_KEY', 'nIxFaJ2uNlyWgwDp3DBgBSLUY9B25MaQRAbccYVrsOu2AxvZJZrCwjm8aE1Nu3H9');
+define('DISQUS_USERNAME', 'achuan');
+define('DISQUS_EMAIL', 'achuan@achuan.io');
+define('DISQUS_PASSWORD', 'Mingming0106');
+define('DISQUS_WEBSITE', 'https://achuan.io');
+define('DISQUS_SHORTNAME', 'https-achuan-io');
 define('DISQUS_APPROVED', true);
 define('DISQUS_BLACKLIST', false);
 define('MOD_IDENT', 1);
-define('USE_TEMP', false);
+define('USE_TEMP', true);
 
 /*
  * 网络设置
@@ -53,7 +53,7 @@ define('USE_TEMP', false);
  *
  */
 define('IP_MODE', false);
-define('DISQUS_IP', '151.101.0.134'); 
+define('DISQUS_IP', '151.101.0.134');
 define('DISQUS_MEDIAIP', '151.101.24.64');
 define('DISQUS_LOGINIP', '151.101.40.134');
 
@@ -61,13 +61,13 @@ define('DISQUS_LOGINIP', '151.101.40.134');
  * 图片设置
  *
  * GRAVATAR_CDN     Gravatar 头像 CDN
- * GRAVATAR_DEFAULT Gravatar 默认头像，即 d 参数，可参考 https://www.gravatar.com/site/implement/images/ 
+ * GRAVATAR_DEFAULT Gravatar 默认头像，即 d 参数，可参考 https://www.gravatar.com/site/implement/images/
  * EMOJI_PATH       Emoji 表情 PNG 资源路径
  *
  */
- 
+
 define('GRAVATAR_CDN', '//cn.gravatar.com/avatar/');
-define('GRAVATAR_DEFAULT', 'retro');
+define('GRAVATAR_DEFAULT', 'mp');
 define('EMOJI_PATH', 'https://github.githubassets.com/images/icons/emoji/unicode/');
 
 /*
@@ -84,9 +84,9 @@ define('EMOJI_PATH', 'https://github.githubassets.com/images/icons/emoji/unicode
  */
 
 define('SMTP_SECURE', 'ssl');
-define('SMTP_HOST', '');
-define('SMTP_PORT', 465);
-define('SMTP_USERNAME', '');
-define('SMTP_PASSWORD', '');
-define('SMTP_FROM', '');
-define('SMTP_FROMNAME', '');
+define('SMTP_HOST', 'smtp.ym.163.com');
+define('SMTP_PORT', 994);
+define('SMTP_USERNAME', 'achuan@achuan.io');
+define('SMTP_PASSWORD', 'Mingming0106');
+define('SMTP_FROM', 'achuan@achuan.io');
+define('SMTP_FROMNAME', '阿川');
