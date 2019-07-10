@@ -35,7 +35,7 @@ define('PUBLIC_KEY', '13703IoHSQlda5rrhgz2QBbz2IL0e9YLAYdBIeIbyrAKGBriU3dEyoF3Vh
 define('SECRET_KEY', 'nIxFaJ2uNlyWgwDp3DBgBSLUY9B25MaQRAbccYVrsOu2AxvZJZrCwjm8aE1Nu3H9');
 define('DISQUS_USERNAME', 'achuan');
 define('DISQUS_EMAIL', 'achuan@achuan.io');
-define('DISQUS_PASSWORD', 'Mingming0106');
+define('DISQUS_PASSWORD', 'achuan0116');
 define('DISQUS_WEBSITE', 'https://achuan.io');
 define('DISQUS_SHORTNAME', 'https-achuan-io');
 define('DISQUS_APPROVED', true);
@@ -87,6 +87,6 @@ define('SMTP_SECURE', 'ssl');
 define('SMTP_HOST', 'smtp.ym.163.com');
 define('SMTP_PORT', 994);
 define('SMTP_USERNAME', 'achuan@achuan.io');
-define('SMTP_PASSWORD', 'Mingming0106');
+define('SMTP_PASSWORD', 'achuan0116');
 define('SMTP_FROM', 'achuan@achuan.io');
 define('SMTP_FROMNAME', '阿川');
