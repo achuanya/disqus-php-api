@@ -500,7 +500,7 @@ require('./iDisqus.scss');
                 </div>
                 <div class="comment-reaction-list"></div>
             </div>
-            <div class="init-container" data-tips="正在初始化……"><svg class="init-bg" width="72" height="72" viewBox="0 0 720 720" version="1.1" xmlns="http://www.w3.org/2000/svg"><path class="ring" fill="none" stroke="#9d9ea1" d="M 0 -260 A 260 260 0 1 1 -80 -260" transform="translate(400,400)" stroke-width="50" /><polygon transform="translate(305,20)" points="50,0 0,100 18,145 50,82 92,145 100,100" style="fill:#9d9ea1"/></svg></div>
+            <div class="init-container" data-tips="牛逼的人都会说两句"><svg class="init-bg" width="72" height="72" viewBox="0 0 720 720" version="1.1" xmlns="http://www.w3.org/2000/svg"><path class="ring" fill="none" stroke="#9d9ea1" d="M 0 -260 A 260 260 0 1 1 -80 -260" transform="translate(400,400)" stroke-width="50" /><polygon transform="translate(305,20)" points="50,0 0,100 18,145 50,82 92,145 100,100" style="fill:#9d9ea1"/></svg></div>
             <div class="comment-header">
                 <div class="comment-header-primary">
                     <span class="comment-header-item" id="comment-count">评论</span>
@@ -528,7 +528,7 @@ require('./iDisqus.scss');
                 <div class="comment-avatar avatar"><img class="comment-avatar-image" src="//a.disquscdn.com/images/noavatar92.png" data-avatar="//a.disquscdn.com/images/noavatar92.png"></div>
                 <div class="comment-form">
                     <div class="comment-form-wrapper">
-                        <textarea class="comment-form-textarea" placeholder="加入讨论……"></textarea>
+                        <textarea class="comment-form-textarea" placeholder="牛逼的人都会说两句"></textarea>
                         <div class="comment-form-alert"></div>
                         <div class="comment-image">
                             <ul class="comment-image-list"></ul>
@@ -1572,7 +1572,7 @@ require('./iDisqus.scss');
             }
 
             if (!_.stat.message && !_.stat.mediaHtml) {
-                _.box = _.dom.querySelector('.comment-box').outerHTML.replace('comment-form-wrapper', 'comment-form-wrapper editing').replace(/加入讨论……/, '');
+                _.box = _.dom.querySelector('.comment-box').outerHTML.replace('comment-form-wrapper', 'comment-form-wrapper editing').replace(/牛逼的人都会说两句/, '');
             }
 
             if (/^\s*$/i.test(message)) {
@@ -1794,7 +1794,7 @@ require('./iDisqus.scss');
                 if (_.user.logged_in == 'false') {
                     _.dom.querySelector('.comment-avatar-image').src = _.stat.forum.avatar;
                 }
-                _.box = _.dom.querySelector('.comment-box').outerHTML.replace(/<label class="comment-actions-label exit"(.|\n)*<\/label>\n/, '').replace('comment-form-wrapper', 'comment-form-wrapper editing').replace(/加入讨论……/, '');
+                _.box = _.dom.querySelector('.comment-box').outerHTML.replace(/<label class="comment-actions-label exit"(.|\n)*<\/label>\n/, '').replace('comment-form-wrapper', 'comment-form-wrapper editing').replace(/牛逼的人都会说两句/, '');
                 _.opts.badge = _.stat.forum.moderatorBadgeText;
                 if (!_.stat.order) {
                     switch (_.stat.forum.order) {
