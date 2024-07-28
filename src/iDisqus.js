@@ -785,46 +785,6 @@ require('./iDisqus.scss');
         }
     };
 
-    // 加载相关话题
-    iDisqus.prototype.loadRelated = function () {
-        var _ = this;
-        if (_.stat.forum.settings.organicDiscoveryEnabled == false || _.stat.relatedLoaded) {
-            return;
-        }
-        getAjax(
-            _.opts.api + '/threadsList.php?type=' + _.opts.relatedType.toLowerCase() + '&thread=' + _.stat.thread.id,
-            function (resp) {
-                var data = JSON.parse(resp);
-                if (data.code == 0) {
-                    _.stat.relatedLoaded = true;
-                    var threads = data.response;
-                    var popHtml = '';
-                    threads.forEach(function (item) {
-                        var message = item.topPost.message.replace(/<[^>]*>/g, '');
-                        popHtml += `<li class="related-item">
-                        <a class="related-item-link" href="${item.link}" title="${item.title}">
-                        <div class="related-item-title">${item.title}</div>
-                        <div class="related-item-desc">${item.posts}条评论<span class="related-item-bullet"> • </span><time class="related-item-time" datetime="${item.createdAt}"></time></div></a>
-                        <a class="related-item-link" href="${item.link}?#comment-${item.topPost.id}" title="${message}">
-                        <div class="related-item-post">
-                        <div class="related-item-avatar"><img src="${item.topPost.avatar}" /></div>
-                        <div class="related-item-main">
-                        <div class="related-item-name">${ item.topPost.name}</div>
-                        <div class="related-item-message">${ message}</div>
-                        </div>
-                        </div></a>
-                        </li>`;
-                    });
-                    popHtml = `<div class="comment-related-title">在<span class="comment-related-forumname">${_.stat.forum.name}</span>上还有</div><div class="comment-related-content"><ul class="related-list">${popHtml}</ul></div>`;
-                    _.dom.querySelector('.comment-related').innerHTML = popHtml;
-                    _.timeAgo();
-                }
-            }, function () {
-                console.log('获取数据失败！')
-            }
-        );
-    };
-
     // 加载反应
     iDisqus.prototype.loadReactions = function () {
         var _ = this;
@@ -1829,7 +1789,6 @@ require('./iDisqus.scss');
                     _.dom.querySelector('.comment-recommend-text').innerHTML = '已推荐';
                 }
                 _.dom.querySelector('#idisqus').classList.remove('init')
-                _.loadRelated();
                 _.loadReactions();
                 _.dom.querySelector('#comment-count').innerHTML = _.stat.thread.posts + ' 条评论';
                 _.getlist();
