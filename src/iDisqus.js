@@ -580,7 +580,6 @@ require('./iDisqus.scss');
             </div>
             <ul id="comments" class="comment-list" data-tips="评论加载中……"></ul>
             <a href="javascript:;" class="comment-loadmore hide">加载更多</a>
-            <div class="comment-related"></div>
         </div>
         <div class="comment" id="disqus_thread"></div>`;
 

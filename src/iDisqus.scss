@@ -1152,7 +1152,7 @@
     100%{transform:rotate(360deg)}
 }
 
-@media screen and(max-width: 450px) {
+@media screen and (max-width: 450px) {
     .comment-reaction-text{
         display: none;
     }
@@ -1197,9 +1197,5 @@
             margin: 5px;
             width: 100%;
         }
-    }
-    .comment-related .related-list .related-item {
-        width: 100%;
-        padding-left: 10px;
     }
 }
